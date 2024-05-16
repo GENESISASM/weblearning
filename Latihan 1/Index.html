@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Monitoring Peserta Pendidikan PT. XYZ Indonesia</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Informasi Monitoring Peserta Pendidikan</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tambah-peserta">Tambah Peserta</a></li>
+                <li><a href="#data-peserta">Data Peserta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Selamat Datang di Sistem Informasi Monitoring Peserta Pendidikan PT. XYZ Indonesia</h2>
+        <p>Sistem ini membantu memonitoring peserta pendidikan pada Divisi Pendidikan dan Pelatihan.</p>
+    </section>
+
+    <section id="tambah-peserta">
+        <h2>Tambah Peserta</h2>
+        <form id="form-tambah-peserta">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" name="umur" required>
+            
+            <label for="pendidikan">Pendidikan:</label>
+            <input type="text" id="pendidikan" name="pendidikan" required>
+            
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" required></textarea>
+            
+            <button type="submit">Tambah Peserta</button>
+        </form>
+    </section>
+
+    <section id="data-peserta">
+        <h2>Data Peserta</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Pendidikan</th>
+                    <th>Alamat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data peserta akan dimasukkan di sini -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PT. XYZ Indonesia. All rights reserved.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
